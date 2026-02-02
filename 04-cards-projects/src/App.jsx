@@ -113,11 +113,11 @@ console.log(jobs);
 
   return (
     <div className="parent">
-      {jobs.map(function(elem){
-        return <Card bandlogo={elem.brandlogo} company={elem.company} post={elem.post} datePosted={elem.datePosted} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
-      })}
-      
-
+      {jobs.map(function(elem,indx){
+        return <div key={indx}>
+          <Card bandlogo={elem.brandlogo} company={elem.company} post={elem.post} datePosted={elem.datePosted} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
+        </div>
+        })}
     </div>
   )
 }
