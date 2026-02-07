@@ -7,14 +7,11 @@ const Rightcontent = (props) => {
  const [list, setlist] = useState(props.users);
   let intervel;
  function scroll(){
-    ref.current.scrollBy (1,0);
+   ref.current.scrollBy(1,0);
  }
   useEffect(()=>{
     if(ref.current){
     intervel =  setInterval(()=>{
-            if((ref.current.scrollLeft > ref.current.scrollWidth-800)){
-              setlist([...list,...list]);
-            }
             scroll();
       },10)
     }
