@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  color:white;
+}
+body{
+  background: #000;
+  color:white;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  padding:30px 40px;
+  font-size: larger;
+  background-color: rgb(50, 101, 117);
+}
+h1{
+  display: flex;
+  justify-content: center;
+  padding:20%;
+  font-size:100px;
+}
+
+.nav div{
+  display:flex;
+  gap:40px;
+  margin-left: auto;
+}
